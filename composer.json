@@ -1,0 +1,50 @@
+{
+    "name": "xuanquynh/laravel-extensions",
+    "description": "Provide helpful extensions for Laravel framework",
+    "keywords": [
+        "xuanquynh", "laravel", "laravel-extensions"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/xuanquynh/laravel-extensions",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/xuanquynh/laravel-extensions/issues",
+        "source": "https://github.com/xuanquynh/laravel-extensions"
+    },
+    "authors": [
+        {
+            "name": "Nguyễn Xuân Quỳnh",
+            "email": "nguyenxuanquynh2210vghy@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/contracts": "5.6 || 5.7",
+        "illuminate/database": "5.6 || 5.7",
+        "illuminate/http": "5.6 || 5.7",
+        "illuminate/support": "5.6 || 5.7"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.1",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "XuanQuynh\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "XuanQuynh\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
