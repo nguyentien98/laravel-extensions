@@ -8,7 +8,9 @@ use XuanQuynh\Laravel\Repositories\Repository;
 class RepositoryServiceProvider extends ServiceProvider
 {
     /**
-     * {@inheritdoc}
+     * Register any application services.
+     *
+     * @return void
      */
     public function register()
     {
