@@ -18,6 +18,7 @@
         }
     ],
     "require": {
+        "illuminate/console": "~5.6",
         "illuminate/contracts": "~5.6",
         "illuminate/database": "~5.6",
         "illuminate/http": "~5.6",
