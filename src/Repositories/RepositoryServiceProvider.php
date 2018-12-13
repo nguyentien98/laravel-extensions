@@ -14,9 +14,13 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->resolving(function ($instance, $app) {
-            if ($instance instanceof Repository) {
-                $instance->setApplication($app);
+        $this->app->resolving(function ($repository, $app) {
+            if ($repository instanceof Repository) {
+                $repository->setApplication($app);
+
+                $repository->setModel(
+                    $app->make($repository->getModelName())
+                );
             }
         });
     }
