@@ -2,7 +2,7 @@
     "name": "xuanquynh/laravel-extensions",
     "description": "The \"xuanquynh/laravel-extensions\" package provides some helpful extensions for Laravel Framework.",
     "keywords": [
-        "xuanquynh/laravel-extensions", "xuanquynh", "laravel", "laravel-extensions"
+        "xuanquynh", "laravel", "laravel-extensions"
     ],
     "type": "library",
     "homepage": "https://github.com/xuanquynh/laravel-extensions",
