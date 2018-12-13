@@ -1,8 +1,8 @@
 {
     "name": "xuanquynh/laravel-extensions",
-    "description": "Provide helpful extensions for Laravel framework",
+    "description": "The \"xuanquynh/laravel-extensions\" package provides some helpful extensions for Laravel Framework.",
     "keywords": [
-        "xuanquynh", "laravel", "laravel-extensions"
+        "xuanquynh/laravel-extensions", "xuanquynh", "laravel", "laravel-extensions"
     ],
     "type": "library",
     "homepage": "https://github.com/xuanquynh/laravel-extensions",
@@ -18,11 +18,11 @@
         }
     ],
     "require": {
-        "illuminate/console": "~5.6",
-        "illuminate/contracts": "~5.6",
-        "illuminate/database": "~5.6",
-        "illuminate/http": "~5.6",
-        "illuminate/support": "~5.6"
+        "illuminate/console": ">=5.6 <5.8",
+        "illuminate/contracts": ">=5.6 <5.8",
+        "illuminate/database": ">=5.6 <5.8",
+        "illuminate/http": ">=5.6 <5.8",
+        "illuminate/support": ">=5.6 <5.8"
     },
     "require-dev": {
         "mockery/mockery": "^1.1",
