@@ -1,2 +1,4 @@
 
-The xuanquynh/laravel-contracts-extension component
+# Laravel Contracts Extension
+
+This repository stores interfaces only.
