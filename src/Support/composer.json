@@ -1,8 +1,8 @@
 {
-    "name": "xuanquynh/laravel-extensions",
-    "description": "The \"xuanquynh/laravel-extensions\" package provides some helpful extensions for Laravel Framework.",
+    "name": "xuanquynh/laravel-support",
+    "description": "The \"xuanquynh/laravel-support\" package extends Laravel Support Component.",
     "keywords": [
-        "xuanquynh", "laravel", "laravel-extensions"
+        "xuanquynh", "laravel", "laravel-support"
     ],
     "type": "library",
     "homepage": "https://github.com/xuanquynh/laravel-extensions",
@@ -18,30 +18,14 @@
         }
     ],
     "require": {
-        "illuminate/console": ">=5.6 <5.8",
         "illuminate/contracts": ">=5.6 <5.8",
         "illuminate/database": ">=5.6 <5.8",
         "illuminate/http": ">=5.6 <5.8",
         "illuminate/support": ">=5.6 <5.8"
     },
-    "replace": {
-        "xuanquynh/laravel-console": "self.version",
-        "xuanquynh/laravel-contracts": "self.version",
-        "xuanquynh/laravel-repositories": "self.version",
-        "xuanquynh/laravel-support": "self.version"
-    },
-    "require-dev": {
-        "mockery/mockery": "^1.1",
-        "phpunit/phpunit": "^7.0"
-    },
     "autoload": {
         "psr-4": {
-            "XuanQuynh\\Laravel\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "XuanQuynh\\Laravel\\Tests\\": "tests/"
+            "XuanQuynh\\Laravel\\Support\\": ""
         }
     },
     "extra": {

@@ -1,0 +1,40 @@
+{
+    "name": "xuanquynh/laravel-repositories",
+    "description": "The \"xuanquynh/laravel-repositories\" package extends Laravel Repositories Component.",
+    "keywords": [
+        "xuanquynh", "laravel", "laravel-repositories"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/xuanquynh/laravel-extensions",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/xuanquynh/laravel-extensions/issues",
+        "source": "https://github.com/xuanquynh/laravel-extensions"
+    },
+    "authors": [
+        {
+            "name": "Nguyễn Xuân Quỳnh",
+            "email": "nguyenxuanquynh2210vghy@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": ">=5.6 <5.8",
+        "illuminate/database": ">=5.6 <5.8",
+        "xuanquynh/laravel-support": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "XuanQuynh\\Laravel\\Repositories\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

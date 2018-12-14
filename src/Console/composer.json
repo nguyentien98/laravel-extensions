@@ -1,0 +1,38 @@
+{
+    "name": "xuanquynh/laravel-console",
+    "description": "The \"xuanquynh/laravel-console\" package extends Laravel Console Component.",
+    "keywords": [
+        "xuanquynh", "laravel", "laravel-console"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/xuanquynh/laravel-extensions",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/xuanquynh/laravel-extensions/issues",
+        "source": "https://github.com/xuanquynh/laravel-extensions"
+    },
+    "authors": [
+        {
+            "name": "Nguyễn Xuân Quỳnh",
+            "email": "nguyenxuanquynh2210vghy@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/console": ">=5.6 <5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "XuanQuynh\\Laravel\\Console\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
