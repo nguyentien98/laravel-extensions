@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -e
+set -x
+
+CURRENT_BRANCH="master"
+
+function split()
+{
+    SHA1=`./bin/splitsh-lite --prefix=$1`
+    git push $2 "$SHA1:refs/heads/$CURRENT_BRANCH" -f
+}
+
+function remote()
+{
+    git remote add $1 $2 || true
+}
+
+git pull origin $CURRENT_BRANCH
+
+remote console git@github.com:xuanquynh/laravel-console.git
+remote contracts git@github.com:xuanquynh/laravel-contracts.git
+remote repositories git@github.com:xuanquynh/laravel-repositories.git
+remote support git@github.com:xuanquynh/laravel-support.git
+
+split 'src/Console' console
+split 'src/Contracts' contracts
+split 'src/Repositories' respositories
+split 'src/Support' support
