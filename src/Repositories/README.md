@@ -7,10 +7,10 @@
 
 ## Installation
 
-You should install the `xuanquynh/laravel-extensions` dependency via Composer:
+You should install the `xuanquynh/laravel-repositories` dependency via Composer:
 
 ```bash
-composer require xuanquynh/laravel-extensions
+composer require xuanquynh/laravel-repositories
 ```
 
 Then, you have to add the `XuanQuynh\Laravel\Repositories\RepositoryServiceProvider` class to the `config/app.php` configuration file.
