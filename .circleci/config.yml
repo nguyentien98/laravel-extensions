@@ -16,7 +16,7 @@ jobs:
     steps:
       - checkout
 
-      - run: sudo composer self-update
+      - run: composer global require xuanquynh/php-codesniffer
 
       # Download and cache dependencies
       - restore_cache:
@@ -31,6 +31,9 @@ jobs:
           paths:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
+
+      # run phpcs
+      - run: $HOME/.composer/vendor/bin/phpcs --standard=$HOME/.composer/vendor/xuanquynh/php-codesniffer/phpcs.xml src/
 
       # run tests!
       - run: vendor/bin/phpunit
