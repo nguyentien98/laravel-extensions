@@ -1,8 +1,12 @@
 
-# About
+## About
 
-<!-- (required) - Please provide as many as details about the pull request! -->
+- What are you going on?
 
-<!-- # Related URLs -->
+<!-- Please provide as many as details about the pull request! -->
 
-<!-- (optional) - Please provide any related URLs (resources, discussions, documentations,...) that may help us to understand the pull request correctly! -->
+## References
+
+- N/A
+
+<!-- Please provide any related URLs (resources, discussions, documentations,...) that may help us to understand the pull request correctly! -->
