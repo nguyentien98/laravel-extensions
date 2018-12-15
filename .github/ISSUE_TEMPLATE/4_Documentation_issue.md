@@ -1,9 +1,9 @@
 ---
 name: ⛔ Documentation Issue
-about: Any documents problems about Laravel Extensions
+about: Feel free to raise documentation problems about Laravel Extensions!
 
 ---
 
-Each component has it's own README.md file, so please provide the exact component.
+Each component has it's own guide, so please provide the exact one that you think it may be incorrect.
 
 Thanks!
