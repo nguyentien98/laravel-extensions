@@ -1,6 +1,6 @@
 ---
 name: ⛔ Security Issue
-about: Any security problems about Laravel Extensions
+about: Please report security problems about Laravel Extensions as soon as possible!
 
 ---
 

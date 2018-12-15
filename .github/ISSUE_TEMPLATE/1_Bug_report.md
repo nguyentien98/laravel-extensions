@@ -1,6 +1,6 @@
 ---
 name: 🐛 Bug Report
-about: Report errors and problems
+about: Report errors and problems.
 
 ---
 

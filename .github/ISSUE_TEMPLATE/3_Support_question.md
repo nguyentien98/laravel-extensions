@@ -1,6 +1,6 @@
 ---
 name: ⛔ Support Question
-about: Any questions about Laravel Extensions
+about: Feel free to ask any questions about Laravel Extensions!
 
 ---
 
