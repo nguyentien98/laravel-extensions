@@ -41,4 +41,7 @@ php artisan make:class ClassName
 php artisan make:interface InterfaceName
 # Create a new trait file.
 php artisan make:trait TraitName
+# Search commands by keyword.
+php artisan search OneWord
+php artisan search 'Some words that you want to search'
 ```

@@ -30,6 +30,7 @@ class ConsoleServiceProvider extends ServiceProvider
         'ClassMakeCommand' => 'command.class.make',
         'InterfaceMakeCommand' => 'command.interface.make',
         'TraitMakeCommand' => 'command.trait.make',
+        'SearchCommand' => 'command.search',
     ];
 
     /**
@@ -90,6 +91,19 @@ class ConsoleServiceProvider extends ServiceProvider
     {
         $this->app->singleton($name, function ($app) {
             return new TraitMakeCommand($app['files']);
+        });
+    }
+    
+    /**
+     * Register the command.
+     *
+     * @param  string  $name.
+     * @return void
+     */
+    protected function registerSearchCommand($name)
+    {
+        $this->app->singleton($name, function ($app) {
+            return new SearchCommand;
         });
     }
 }
