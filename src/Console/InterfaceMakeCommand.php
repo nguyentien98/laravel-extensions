@@ -12,9 +12,12 @@
 namespace XuanQuynh\Laravel\Console;
 
 use Illuminate\Console\GeneratorCommand;
+use XuanQuynh\Laravel\Console\ReplaceNamespaceTrait;
 
 class InterfaceMakeCommand extends GeneratorCommand
 {
+    use ReplaceNamespaceTrait;
+
     /**
      * The name and signature of the console command.
      *
@@ -48,41 +51,5 @@ class InterfaceMakeCommand extends GeneratorCommand
         }
 
         return __DIR__.'/stubs/interface.stub';
-    }
-
-    /**
-     * Replaces interface name and parent name for given stub
-     *
-     * @param  string  $stub
-     * @param  string  $name
-     * @return self
-     */
-    public function replaceNamespace(&$stub, $name)
-    {
-        if (!$parent = $this->option('extends')) {
-            return parent::replaceNamespace($stub, $name);
-        }
-
-        $namespace = $this->getNamespace($name);
-        $name = trim(substr($name, strrpos($name, '\\')), '\\');
-        $parentName = trim(substr($parent, strrpos($parent, '\\')), '\\');
-
-        $stub = str_replace(
-            [
-                'DummyNamespace',
-                'DummyClass',
-                'DummyParentFullName',
-                'DummyParentName',
-            ],
-            [
-                $namespace,
-                $name,
-                $parent,
-                $parentName,
-            ],
-            $stub
-        );
-        
-        return $this;
     }
 }
