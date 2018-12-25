@@ -16,11 +16,13 @@ use Illuminate\Console\GeneratorCommand;
 class InterfaceMakeCommand extends GeneratorCommand
 {
     /**
-     * The console command name.
+     * The name and signature of the console command.
      *
      * @var string
      */
-    protected $name = 'make:interface';
+    protected $signature = 'make:interface
+                            {name : The interface name}
+                            {--extends= : The interface parent}';
 
     /**
      * The console command description.
@@ -41,6 +43,46 @@ class InterfaceMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
+        if ($this->option('extends')) {
+            return __DIR__.'/stubs/interface.parent.stub';
+        }
+
         return __DIR__.'/stubs/interface.stub';
+    }
+
+    /**
+     * Replaces interface name and parent name for given stub
+     *
+     * @param  string  $stub
+     * @param  string  $name
+     * @return self
+     */
+    public function replaceNamespace(&$stub, $name)
+    {
+        if (!$parent = $this->option('extends')) {
+            return parent::replaceNamespace($stub, $name);
+        }
+
+        $namespace = $this->getNamespace($name);
+        $name = trim(substr($name, strrpos($name, '\\')), '\\');
+        $parentName = trim(substr($parent, strrpos($parent, '\\')), '\\');
+
+        $stub = str_replace(
+            [
+                'DummyNamespace',
+                'DummyClass',
+                'DummyParentFullName',
+                'DummyParentName',
+            ],
+            [
+                $namespace,
+                $name,
+                $parent,
+                $parentName,
+            ],
+            $stub
+        );
+        
+        return $this;
     }
 }
