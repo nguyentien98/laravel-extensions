@@ -12,15 +12,20 @@
 namespace XuanQuynh\Laravel\Console;
 
 use Illuminate\Console\GeneratorCommand;
+use XuanQuynh\Laravel\Console\ReplaceNamespaceTrait;
 
 class ClassMakeCommand extends GeneratorCommand
 {
+    use ReplaceNamespaceTrait;
+    
     /**
-     * The console command name.
+     * The name and signature of the console command.
      *
      * @var string
      */
-    protected $name = 'make:class';
+    protected $signature = 'make:class
+                            {name : The class name}
+                            {--extends= : The class parent}';
 
     /**
      * The console command description.
@@ -41,6 +46,10 @@ class ClassMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
+        if ($this->option('extends')) {
+            return __DIR__.'/stubs/class.parent.stub';
+        }
+        
         return __DIR__.'/stubs/class.stub';
     }
 }
