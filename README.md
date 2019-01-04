@@ -1,7 +1,7 @@
 
 # Laravel Extensions
 
-The "xuanquynh/laravel-extensions" package provides some helpful extensions for Laravel Framework.
+The "sericode/laravel-extensions" package provides some helpful extensions for Laravel Framework.
 
 ## Requirements
 
@@ -9,9 +9,7 @@ The "xuanquynh/laravel-extensions" package provides some helpful extensions for 
 
 ## Usage
 
-These are avaiable extensions:
-
-- [Console](src/Console/README.md)
-- [Contracts](src/Contracts/README.md)
-- [Repositories](src/Repositories/README.md)
-- [Support](src/Support/README.md)
+- [sericode/laravel-console](src/Console/README.md)
+- [sericode/laravel-contracts](src/Contracts/README.md)
+- [sericode/laravel-repositories](src/Repositories/README.md)
+- [sericode/laravel-support](src/Support/README.md)

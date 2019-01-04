@@ -18,10 +18,10 @@ function remote()
 
 git pull origin $CURRENT_BRANCH
 
-remote console git@github.com:xuanquynh/laravel-console.git
-remote contracts git@github.com:xuanquynh/laravel-contracts.git
-remote repositories git@github.com:xuanquynh/laravel-repositories.git
-remote support git@github.com:xuanquynh/laravel-support.git
+remote console git@github.com:sericode/laravel-console.git
+remote contracts git@github.com:sericode/laravel-contracts.git
+remote repositories git@github.com:sericode/laravel-repositories.git
+remote support git@github.com:sericode/laravel-support.git
 
 split 'src/Console' console
 split 'src/Contracts' contracts

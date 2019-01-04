@@ -7,13 +7,13 @@
 
 ## Installation
 
-You should install the `xuanquynh/laravel-support` dependency via Composer:
+You should install the `sericode/laravel-support` dependency via Composer:
 
 ```bash
-composer require xuanquynh/laravel-support
+composer require sericode/laravel-support
 ```
 
-Then, you have to add the `XuanQuynh\Laravel\Support\SupportServiceProvider` class to the `config/app.php` configuration file.
+Then, you have to add the `Sericode\Laravel\Support\SupportServiceProvider` class to the `config/app.php` configuration file.
 
 ```php
 return [
@@ -23,7 +23,7 @@ return [
         /*
          * Package Service Providers...
          */
-        XuanQuynh\Laravel\Support\SupportServiceProvider::class,
+        Sericode\Laravel\Support\SupportServiceProvider::class,
 
     ],
 

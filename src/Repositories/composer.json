@@ -1,15 +1,15 @@
 {
-    "name": "xuanquynh/laravel-repositories",
-    "description": "The \"xuanquynh/laravel-repositories\" package extends Laravel Repositories Component.",
+    "name": "sericode/laravel-repositories",
+    "description": "The \"sericode/laravel-repositories\" package extends Laravel Repositories Component.",
     "keywords": [
         "xuanquynh", "laravel", "laravel-repositories"
     ],
     "type": "library",
-    "homepage": "https://github.com/xuanquynh/laravel-extensions",
+    "homepage": "https://github.com/sericode/laravel-extensions",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/xuanquynh/laravel-extensions/issues",
-        "source": "https://github.com/xuanquynh/laravel-extensions"
+        "issues": "https://github.com/sericode/laravel-extensions/issues",
+        "source": "https://github.com/sericode/laravel-extensions"
     },
     "authors": [
         {
@@ -20,11 +20,11 @@
     "require": {
         "illuminate/support": ">=5.6 <5.8",
         "illuminate/database": ">=5.6 <5.8",
-        "xuanquynh/laravel-support": "^0.1"
+        "sericode/laravel-support": "^0.1"
     },
     "autoload": {
         "psr-4": {
-            "XuanQuynh\\Laravel\\Repositories\\": ""
+            "Sericode\\Laravel\\Repositories\\": ""
         }
     },
     "extra": {
@@ -33,7 +33,7 @@
         }
     },
     "suggest": {
-        "xuanquynh/laravel-contracts": "Required to use base repository interface (^0.1)."
+        "sericode/laravel-contracts": "Required to use base repository interface (^0.1)."
     },
     "config": {
         "sort-packages": true

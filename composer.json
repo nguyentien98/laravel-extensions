@@ -1,20 +1,20 @@
 {
-    "name": "xuanquynh/laravel-extensions",
-    "description": "The \"xuanquynh/laravel-extensions\" package provides some helpful extensions for Laravel Framework.",
+    "name": "sericode/laravel-extensions",
+    "description": "The \"sericode/laravel-extensions\" package provides some helpful extensions for Laravel Framework.",
     "keywords": [
         "xuanquynh", "laravel", "laravel-extensions"
     ],
     "type": "library",
-    "homepage": "https://github.com/xuanquynh/laravel-extensions",
+    "homepage": "https://github.com/sericode/laravel-extensions",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/xuanquynh/laravel-extensions/issues",
-        "source": "https://github.com/xuanquynh/laravel-extensions"
+        "issues": "https://github.com/sericode/laravel-extensions/issues",
+        "source": "https://github.com/sericode/laravel-extensions"
     },
     "authors": [
         {
             "name": "Nguyễn Xuân Quỳnh",
-            "email": "nguyenxuanquynh2210vghy@gmail.com"
+            "email": "nguyen.xuan.quynh@framgia.com"
         }
     ],
     "require": {
@@ -25,10 +25,10 @@
         "illuminate/support": ">=5.6 <5.8"
     },
     "replace": {
-        "xuanquynh/laravel-console": "self.version",
-        "xuanquynh/laravel-contracts": "self.version",
-        "xuanquynh/laravel-repositories": "self.version",
-        "xuanquynh/laravel-support": "self.version"
+        "sericode/laravel-console": "self.version",
+        "sericode/laravel-contracts": "self.version",
+        "sericode/laravel-repositories": "self.version",
+        "sericode/laravel-support": "self.version"
     },
     "require-dev": {
         "mockery/mockery": "^1.1",
@@ -36,17 +36,17 @@
     },
     "autoload": {
         "psr-4": {
-            "XuanQuynh\\Laravel\\": "src/"
+            "Sericode\\Laravel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "XuanQuynh\\Laravel\\Tests\\": "tests/"
+            "Sericode\\Laravel\\Tests\\": "tests/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.2-dev"
+            "dev-master": "0.3-dev"
         }
     },
     "config": {
