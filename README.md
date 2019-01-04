@@ -9,6 +9,14 @@ The "sericode/laravel-extensions" package provides some helpful extensions for L
 
 ## Usage
 
+Install sericode/laravel-extensions via Composer:
+
+```bash
+composer require sericode/laravel-extensions
+```
+
+These are available extensions:
+
 - [sericode/laravel-console](src/Console/README.md)
 - [sericode/laravel-contracts](src/Contracts/README.md)
 - [sericode/laravel-repositories](src/Repositories/README.md)
