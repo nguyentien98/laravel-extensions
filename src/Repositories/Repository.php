@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the Xuanquynh Laravel Extensions package.
+ * This file is part of the Sericode package.
  *
- * (c) Nguyễn Xuân Quỳnh
+ * (c) Nguyễn Xuân Quỳnh <nguyen.xuan.quynh@sericode.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace XuanQuynh\Laravel\Repositories;
+namespace Sericode\Laravel\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
-use XuanQuynh\Laravel\Support\Interaction\InteractsWithApplication;
+use Sericode\Laravel\Support\Interaction\InteractsWithApplication;
 
 abstract class Repository
 {

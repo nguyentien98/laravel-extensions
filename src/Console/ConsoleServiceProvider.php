@@ -1,15 +1,15 @@
 <?php
 
 /*
- * This file is part of the Xuanquynh Laravel Extensions package.
+ * This file is part of the Sericode package.
  *
- * (c) Nguyễn Xuân Quỳnh
+ * (c) Nguyễn Xuân Quỳnh <nguyen.xuan.quynh@sericode.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace XuanQuynh\Laravel\Console;
+namespace Sericode\Laravel\Console;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\ServiceProvider;
@@ -93,7 +93,7 @@ class ConsoleServiceProvider extends ServiceProvider
             return new TraitMakeCommand($app['files']);
         });
     }
-    
+
     /**
      * Register the command.
      *

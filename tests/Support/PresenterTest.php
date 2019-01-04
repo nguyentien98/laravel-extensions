@@ -1,20 +1,20 @@
 <?php
 
 /*
- * This file is part of the Xuanquynh Laravel Extensions package.
+ * This file is part of the Sericode package.
  *
- * (c) Nguyễn Xuân Quỳnh
+ * (c) Nguyễn Xuân Quỳnh <nguyen.xuan.quynh@sericode.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace XuanQuynh\Laravel\Tests\Support;
+namespace Sericode\Laravel\Tests\Support;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Illuminate\Support\Facades\Request;
-use XuanQuynh\Laravel\Support\Presenter;
+use Sericode\Laravel\Support\Presenter;
 
 class PresenterTest extends TestCase
 {

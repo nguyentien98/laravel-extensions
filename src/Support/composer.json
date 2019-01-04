@@ -1,15 +1,15 @@
 {
-    "name": "xuanquynh/laravel-support",
-    "description": "The \"xuanquynh/laravel-support\" package extends Laravel Support Component.",
+    "name": "sericode/laravel-support",
+    "description": "The \"sericode/laravel-support\" package extends Laravel Support Component.",
     "keywords": [
         "xuanquynh", "laravel", "laravel-support"
     ],
     "type": "library",
-    "homepage": "https://github.com/xuanquynh/laravel-extensions",
+    "homepage": "https://github.com/sericode/laravel-extensions",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/xuanquynh/laravel-extensions/issues",
-        "source": "https://github.com/xuanquynh/laravel-extensions"
+        "issues": "https://github.com/sericode/laravel-extensions/issues",
+        "source": "https://github.com/sericode/laravel-extensions"
     },
     "authors": [
         {
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "XuanQuynh\\Laravel\\Support\\": ""
+            "Sericode\\Laravel\\Support\\": ""
         }
     },
     "extra": {

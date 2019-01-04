@@ -1,20 +1,20 @@
 <?php
 
 /*
- * This file is part of the Xuanquynh Laravel Extensions package.
+ * This file is part of the Sericode package.
  *
- * (c) Nguyễn Xuân Quỳnh
+ * (c) Nguyễn Xuân Quỳnh <nguyen.xuan.quynh@sericode.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace XuanQuynh\Laravel\Tests\Repositories;
+namespace Sericode\Laravel\Tests\Repositories;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Illuminate\Database\Eloquent\Model;
-use XuanQuynh\Laravel\Repositories\Repository;
+use Sericode\Laravel\Repositories\Repository;
 use Illuminate\Contracts\Foundation\Application;
 
 class RepositoryTest extends TestCase

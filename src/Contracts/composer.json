@@ -1,15 +1,15 @@
 {
-    "name": "xuanquynh/laravel-contracts",
-    "description": "The \"xuanquynh/laravel-contracts\" package extends Laravel Contracts Component.",
+    "name": "sericode/laravel-contracts",
+    "description": "The \"sericode/laravel-contracts\" package extends Laravel Contracts Component.",
     "keywords": [
         "xuanquynh", "laravel", "laravel-contracts"
     ],
     "type": "library",
-    "homepage": "https://github.com/xuanquynh/laravel-extensions",
+    "homepage": "https://github.com/sericode/laravel-extensions",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/xuanquynh/laravel-extensions/issues",
-        "source": "https://github.com/xuanquynh/laravel-extensions"
+        "issues": "https://github.com/sericode/laravel-extensions/issues",
+        "source": "https://github.com/sericode/laravel-extensions"
     },
     "authors": [
         {
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "XuanQuynh\\Laravel\\Contracts\\": ""
+            "Sericode\\Laravel\\Contracts\\": ""
         }
     },
     "extra": {

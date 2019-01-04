@@ -7,13 +7,13 @@
 
 ## Installation
 
-You should install the `xuanquynh/laravel-repositories` dependency via Composer:
+You should install the `sericode/laravel-repositories` dependency via Composer:
 
 ```bash
-composer require xuanquynh/laravel-repositories
+composer require sericode/laravel-repositories
 ```
 
-Then, you have to add the `XuanQuynh\Laravel\Repositories\RepositoryServiceProvider` class to the `config/app.php` configuration file.
+Then, you have to add the `Sericode\Laravel\Repositories\RepositoryServiceProvider` class to the `config/app.php` configuration file.
 
 ```php
 return [
@@ -23,7 +23,7 @@ return [
         /*
          * Package Service Providers...
          */
-        XuanQuynh\Laravel\Repositories\RepositoryServiceProvider::class,
+        Sericode\Laravel\Repositories\RepositoryServiceProvider::class,
 
     ],
 
@@ -37,7 +37,7 @@ Creating a specified repository interface.
 ```php
 namespace App\Contracts\Repositories;
 
-use XuanQuynh\Laravel\Contracts\Repositories\Repository;
+use Sericode\Laravel\Contracts\Repositories\Repository;
 
 interface UserRepository extends Repository
 {
@@ -51,7 +51,7 @@ Creating a specified repository class.
 namespace App\Repositories;
 
 use App\Eloquent\User; // User extends Model
-use XuanQuynh\Laravel\Repositories\Repository as BaseRepository;
+use Sericode\Laravel\Repositories\Repository as BaseRepository;
 use App\Contracts\Repositories\UserRepository as UserRepositoryContract;
 
 class UserRepository extends BaseRepository implements UserRepositoryContract

@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the Xuanquynh Laravel Extensions package.
+ * This file is part of the Sericode package.
  *
- * (c) Nguyễn Xuân Quỳnh
+ * (c) Nguyễn Xuân Quỳnh <nguyen.xuan.quynh@sericode.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace XuanQuynh\Laravel\Console;
+namespace Sericode\Laravel\Console;
 
 use Illuminate\Console\GeneratorCommand;
-use XuanQuynh\Laravel\Console\ReplaceNamespaceTrait;
+use Sericode\Laravel\Console\ReplaceNamespaceTrait;
 
 class InterfaceMakeCommand extends GeneratorCommand
 {
