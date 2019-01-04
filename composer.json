@@ -2,7 +2,7 @@
     "name": "sericode/laravel-extensions",
     "description": "The \"sericode/laravel-extensions\" package provides some helpful extensions for Laravel Framework.",
     "keywords": [
-        "xuanquynh", "laravel", "laravel-extensions"
+        "sericode", "laravel", "laravel-extensions"
     ],
     "type": "library",
     "homepage": "https://github.com/sericode/laravel-extensions",

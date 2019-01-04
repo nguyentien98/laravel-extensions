@@ -2,7 +2,7 @@
     "name": "sericode/laravel-contracts",
     "description": "The \"sericode/laravel-contracts\" package extends Laravel Contracts Component.",
     "keywords": [
-        "xuanquynh", "laravel", "laravel-contracts"
+        "sericode", "laravel", "laravel-contracts"
     ],
     "type": "library",
     "homepage": "https://github.com/sericode/laravel-extensions",
@@ -14,7 +14,7 @@
     "authors": [
         {
             "name": "Nguyễn Xuân Quỳnh",
-            "email": "nguyenxuanquynh2210vghy@gmail.com"
+            "email": "nguyen.xuan.quynh@sericode.com"
         }
     ],
     "require": {
