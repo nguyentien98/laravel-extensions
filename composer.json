@@ -1,0 +1,59 @@
+{
+    "name": "sepiphy/laravel-extensions",
+    "description": "The \"sepiphy/laravel-extensions\" package provides some helpful extensions for Laravel Framework.",
+    "keywords": [
+        "sepiphy", "laravel", "laravel-extensions"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/sepiphy/laravel-extensions",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/sepiphy/laravel-extensions/issues",
+        "source": "https://github.com/sepiphy/laravel-extensions"
+    },
+    "authors": [
+        {
+            "name": "Nguyễn Xuân Quỳnh",
+            "email": "nguyenxuanquynh2210vghy@gmail.com",
+            "homepage": "https://nguyenquynh2210.com",
+            "role": "Software Developer"
+        }
+    ],
+    "require": {
+        "illuminate/console": "~5.5",
+        "illuminate/contracts": "~5.5",
+        "illuminate/database": "~5.5",
+        "illuminate/http": "~5.5",
+        "illuminate/support": "~5.5"
+    },
+    "replace": {
+        "sepiphy/laravel-console": "self.version",
+        "sepiphy/laravel-contracts": "self.version",
+        "sepiphy/laravel-repositories": "self.version",
+        "sepiphy/laravel-support": "self.version"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.1",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sepiphy\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sepiphy\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.3-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
