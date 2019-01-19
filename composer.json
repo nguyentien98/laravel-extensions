@@ -34,7 +34,9 @@
     },
     "require-dev": {
         "mockery/mockery": "^1.1",
-        "phpunit/phpunit": "^7.0"
+        "phpstan/phpstan": "^0.11",
+        "phpunit/phpunit": "^7.5",
+        "xuanquynh/php-codesniffer": "^0.4"
     },
     "autoload": {
         "psr-4": {
@@ -53,6 +55,13 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "test": [
+            "@php vendor/bin/phpcs src -p --standard=./vendor/xuanquynh/php-codesniffer/ruleset.xml",
+            "@php vendor/bin/phpstan analyse src tests",
+            "@php vendor/bin/phpunit tests"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true

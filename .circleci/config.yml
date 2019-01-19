@@ -1,39 +1,61 @@
 
 version: 2
 jobs:
-  build:
+  php73test:
     docker:
-      # specify the version you desire here
-      - image: circleci/php:7.2-apache-node-browsers
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mysql:9.4
-
+      - image: circleci/php:7.3-apache-node-browsers
     working_directory: ~/laravel-extensions
-
     steps:
       - checkout
-
-      - run: composer global require "xuanquynh/php-codesniffer:^0.3"
-
-      # Download and cache dependencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "composer.json" }}
-          # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
       - run: composer install -n --prefer-dist
-
       - save_cache:
           paths:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
+      - run: composer run-script test
 
-      # run phpcs
-      - run: $HOME/.composer/vendor/bin/phpcs --standard=$HOME/.composer/vendor/xuanquynh/php-codesniffer/phpcs.xml src/
+  php72test:
+    docker:
+      - image: circleci/php:7.2-apache-node-browsers
+    working_directory: ~/laravel-extensions
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "composer.json" }}
+          - v1-dependencies-
+      - run: composer install -n --prefer-dist
+      - save_cache:
+          paths:
+            - ./vendor
+          key: v1-dependencies-{{ checksum "composer.json" }}
+      - run: composer run-script test
 
-      # run tests!
-      - run: vendor/bin/phpunit
+  php71test:
+    docker:
+      - image: circleci/php:7.1-apache-node-browsers
+    working_directory: ~/laravel-extensions
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "composer.json" }}
+          - v1-dependencies-
+      - run: composer install -n --prefer-dist
+      - save_cache:
+          paths:
+            - ./vendor
+          key: v1-dependencies-{{ checksum "composer.json" }}
+      - run: composer run-script test
+
+workflows:
+  version: 2
+  testall:
+    jobs:
+      - php71test
+      - php72test
+      - php73test
