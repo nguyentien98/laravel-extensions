@@ -24,7 +24,8 @@
         "illuminate/contracts": "~5.5",
         "illuminate/database": "~5.5",
         "illuminate/http": "~5.5",
-        "illuminate/support": "~5.5"
+        "illuminate/support": "~5.5",
+        "illuminate/filesystem": "~5.5"
     },
     "replace": {
         "sepiphy/laravel-console": "self.version",
