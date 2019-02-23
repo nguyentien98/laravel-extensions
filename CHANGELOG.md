@@ -9,11 +9,12 @@ To get the diff between two versions, go to https://github.com/sepiphy/laravel-e
 
 ### Unreleased
 
+  * feature [Console] Added `app:namespace` artisan command.
+  * feature [Console] Added `env:set` artisan command.
   * feature [Console] Added `make:class` artisan command.
   * feature [Console] Added `make:interface` artisan command.
   * feature [Console] Added `make:trait` artisan command.
   * feature [Console] Added `search` artisan command.
-  * feature [Console] Added `env:set` artisan command.
   * feature [Contracts] Added `Repository` interface.
   * feature [Repositories] Added `Repository` abstract class.
   * feature [Support] Added `Interaction` traits.
