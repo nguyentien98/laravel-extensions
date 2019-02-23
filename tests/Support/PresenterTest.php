@@ -18,7 +18,7 @@ use Sepiphy\Laravel\Support\Presenter;
 
 class PresenterTest extends TestCase
 {
-    public function tearDown()
+    protected function tearDown(): void
     {
         m::close();
     }
