@@ -16,6 +16,7 @@ use PHPUnit\Framework\TestCase;
 use Illuminate\Database\Eloquent\Model;
 use Sepiphy\Laravel\Repositories\Repository;
 use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Database\Eloquent\Builder;
 
 class RepositoryTest extends TestCase
 {
@@ -24,7 +25,7 @@ class RepositoryTest extends TestCase
         m::close();
     }
 
-    public function testModelMethod()
+    public function testGettersAndSetters()
     {
         $repository = new class() extends Repository {
             public function getModelName()
@@ -33,19 +34,19 @@ class RepositoryTest extends TestCase
             }
         };
 
-        $app = m::mock(Application::class);
-        $app->shouldReceive('make')->once()->with('ModelClassName')->andReturn($model = m::mock(Model::class));
+        $repository
+            ->setModel($model = m::mock(Model::class))
+            ->setApplication($app = m::mock(Application::class))
+        ;
 
-        $repository->setApplication($app);
-
-        $this->assertSame($model, $repository->model());
+        $this->assertSame($app, $repository->getApplication());
         $this->assertSame($model, $repository->getModel());
     }
 
     public function testStoreMethod()
     {
         $repository = $this->createRepository();
-        $repository->model()->shouldReceive('create')->once()->with(['key' => 'value']);
+        $repository->getModel()->shouldReceive('create')->once()->with(['key' => 'value']);
         $repository->store(['key' => 'value']);
     }
 
@@ -58,51 +59,72 @@ class RepositoryTest extends TestCase
         $repository->update($model, ['key' => 'value']);
     }
 
-    public function testDestroyMethod()
+    public function testDeleteMethod()
     {
         $model = m::mock(Model::class);
         $model->shouldReceive('delete')->once();
         $repository = $this->createRepository();
-        $repository->destroy($model);
+        $repository->delete($model);
+    }
+
+    public function testDestroyMethod()
+    {
+        $repository = $this->createRepository();
+        $repository->getModel()->shouldReceive('destroy')->once()->with($ids = [1, 2, 3]);
+        $repository->destroy($ids);
+    }
+
+    public function testAllMethod()
+    {
+        $query = m::mock(Builder::class);
+        $query->shouldReceive('all')->once()->with(['foo', 'bar']);
+        $repository = $this->createRepository();
+        $repository->getModel()->shouldReceive('query')->once()->andReturn($query);
+        $repository->all(['foo', 'bar']);
+    }
+
+    public function testFirstMethod()
+    {
+        $query = m::mock(Builder::class);
+        $query->shouldReceive('first')->once()->with(['foo', 'bar']);
+        $repository = $this->createRepository();
+        $repository->getModel()->shouldReceive('query')->once()->andReturn($query);
+        $repository->first(['foo', 'bar']);
+    }
+
+    public function testFirstOrFailMethod()
+    {
+        $query = m::mock(Builder::class);
+        $query->shouldReceive('firstOrFail')->once()->with(['foo', 'bar']);
+        $repository = $this->createRepository();
+        $repository->getModel()->shouldReceive('query')->once()->andReturn($query);
+        $repository->firstOrFail(['foo', 'bar']);
     }
 
     public function testFindMethod()
     {
+        $query = m::mock(Builder::class);
+        $query->shouldReceive('find')->once()->with(3, ['foo', 'bar']);
         $repository = $this->createRepository();
-        $repository->model()->shouldReceive('find')->once()->with(1, ['*']);
-        $repository->find(1, ['*']);
-
-        $repository = $this->createRepository();
-        $repository->model()->shouldReceive('find')->once()->with(3, ['foo', 'bar']);
+        $repository->getModel()->shouldReceive('query')->once()->andReturn($query);
         $repository->find(3, ['foo', 'bar']);
     }
 
     public function testFindOrFailMethod()
     {
+        $query = m::mock(Builder::class);
+        $query->shouldReceive('findOrFail')->once()->with(3, ['foo', 'bar']);
         $repository = $this->createRepository();
-        $repository->model()->shouldReceive('findOrFail')->once()->with(1, ['*']);
-        $repository->findOrFail(1, ['*']);
-
-        $repository = $this->createRepository();
-        $repository->model()->shouldReceive('findOrFail')->once()->with(3, ['foo', 'bar']);
+        $repository->getModel()->shouldReceive('query')->once()->andReturn($query);
         $repository->findOrFail(3, ['foo', 'bar']);
-    }
-
-    public function testGetMethod()
-    {
-        $repository = $this->createRepository();
-        $repository->model()->shouldReceive('get')->once()->with(['*']);
-        $repository->get();
-
-        $repository = $this->createRepository();
-        $repository->model()->shouldReceive('get')->once()->with(['foo', 'bar']);
-        $repository->get(['foo', 'bar']);
     }
 
     public function testPaginateMethod()
     {
+        $query = m::mock(Builder::class);
+        $query->shouldReceive('paginate')->once();
         $repository = $this->createRepository();
-        $repository->model()->shouldReceive('paginate')->once();
+        $repository->getModel()->shouldReceive('query')->once()->andReturn($query);
         $repository->paginate();
     }
 
