@@ -20,12 +20,12 @@
         }
     ],
     "require": {
-        "illuminate/console": "5.8",
-        "illuminate/contracts": "5.8",
-        "illuminate/database": "5.8",
-        "illuminate/http": "5.8",
-        "illuminate/support": "5.8",
-        "illuminate/filesystem": "5.8"
+        "illuminate/console": "5.8.*",
+        "illuminate/contracts": "5.8.*",
+        "illuminate/database": "5.8.*",
+        "illuminate/http": "5.8.*",
+        "illuminate/support": "5.8.*",
+        "illuminate/filesystem": "5.8.*"
     },
     "replace": {
         "sepiphy/laravel-console": "self.version",
