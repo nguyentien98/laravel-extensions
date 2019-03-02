@@ -61,7 +61,7 @@
         "test": [
             "@php vendor/bin/phpcs src -p --standard=./vendor/xuanquynh/php-codesniffer/ruleset.xml",
             "@php vendor/bin/phpstan analyse src tests",
-            "@php vendor/bin/phpunit tests"
+            "@php vendor/bin/phpunit"
         ]
     },
     "minimum-stability": "dev",
