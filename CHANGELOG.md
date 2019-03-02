@@ -9,7 +9,7 @@ To get the diff between two versions, go to https://github.com/sepiphy/laravel-e
 
 ### Unreleased
 
-  * feature [Console] Added `app:namespace` artisan command.
+  * feature [Console] Added `app:name` artisan command.
   * feature [Console] Added `env:set` artisan command.
   * feature [Console] Added `make:class` artisan command.
   * feature [Console] Added `make:interface` artisan command.
