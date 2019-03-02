@@ -20,12 +20,12 @@
         }
     ],
     "require": {
-        "illuminate/console": "~5.5",
-        "illuminate/contracts": "~5.5",
-        "illuminate/database": "~5.5",
-        "illuminate/http": "~5.5",
-        "illuminate/support": "~5.5",
-        "illuminate/filesystem": "~5.5"
+        "illuminate/console": "5.8",
+        "illuminate/contracts": "5.8",
+        "illuminate/database": "5.8",
+        "illuminate/http": "5.8",
+        "illuminate/support": "5.8",
+        "illuminate/filesystem": "5.8"
     },
     "replace": {
         "sepiphy/laravel-console": "self.version",
@@ -51,7 +51,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.3-dev"
+            "dev-master": "1.x-dev"
         }
     },
     "config": {
