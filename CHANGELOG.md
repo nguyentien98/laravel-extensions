@@ -7,6 +7,10 @@ in 1.x minor versions.
 To get the diff for a specific change, go to https://github.com/sepiphy/laravel-extensions/commit/XXX where XXX is the change hash.
 To get the diff between two versions, go to https://github.com/sepiphy/laravel-extensions/compare/v1.0.0...v1.0.1
 
+### v1.0.1 (2019-03-04)
+
+  * bug [Repositories] Fix `Sepiphy\Laravel\Repositories\Repository::firstOrFail()` to match `Sepiphy\Laravel\Contracts\Repositories\Repository::firstOrFail()`.
+
 ### v1.0.0 (2019-03-02)
 
   * feature [Console] Added `app:name` artisan command.
