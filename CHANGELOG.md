@@ -7,6 +7,10 @@ in 1.x minor versions.
 To get the diff for a specific change, go to https://github.com/sepiphy/laravel-extensions/commit/XXX where XXX is the change hash.
 To get the diff between two versions, go to https://github.com/sepiphy/laravel-extensions/compare/v1.0.0...v1.0.1
 
+### v1.1.1 (2019-03-10)
+
+  * bug [Repositories] Correct `sepiphy/laravel-support` required version.
+
 ### v1.1.0 (2019-03-09)
 
   * feature [Console] Discover `ConsoleServiceProvider` automatically.
