@@ -1,7 +1,7 @@
 
-#About
+## About
 
-Providing helpful features for a Laravel project.
+Provide helpful features for a Laravel project.
 
 ## Components
 
