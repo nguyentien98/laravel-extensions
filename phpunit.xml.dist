@@ -14,7 +14,7 @@
     verbose="true"
 >
     <testsuites>
-        <testsuite name="sepiphy/laravel-extensions Test Suite">
+        <testsuite name="Laravel Extensions Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
