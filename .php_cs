@@ -22,6 +22,7 @@ return PhpCsFixer\Config::create()
     ->setRiskyAllowed(true)
     ->setFinder($finder)
     ->setRules([
+        'declare_strict_types' => true,
         'header_comment' => ['header' => $header],
     ])
 ;
