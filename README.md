@@ -1,21 +1,9 @@
 
-# Providing helpful features for a Laravel project
+#About
 
-## Requirements
+Providing helpful features for a Laravel project.
 
-- Laravel [5.8](https://laravel.com/docs/5.8).
-
-## Installation
-
-Install sepiphy/laravel-extensions via composer.
-
-```bash
-composer require sepiphy/laravel-extensions
-```
-
-## Usage
-
-Please see each below links for more details!
+## Components
 
 - [sepiphy/laravel-console](src/Console/README.md)
 - [sepiphy/laravel-contracts](src/Contracts/README.md)
@@ -24,9 +12,11 @@ Please see each below links for more details!
 
 ## Contributing
 
-Thank you for considering contributing to `sepiphy/laravel-extensions` package!
+- Thank you for considering contributing to `sepiphy/laravel-extensions` package!
 
-Feel free to submit an issue or a pull request. All contributions are welcome.
+- Feel free to submit an issue or a pull request for your expectation!
+
+- All contributions are welcome and accepted via pull requests.
 
 ## License
 
