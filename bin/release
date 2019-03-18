@@ -9,7 +9,7 @@ then
     exit 1
 fi
 
-CURRENT_BRANCH="1.x"
+CURRENT_BRANCH="master"
 
 for REMOTE in console contracts repositories support
 do
