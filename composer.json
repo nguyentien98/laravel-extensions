@@ -1,15 +1,13 @@
 {
-    "name": "sepiphy/laravel-extensions",
-    "description": "Provide helpful features for a Laravel project.",
-    "keywords": [
-        "sepiphy", "laravel", "laravel-extensions", "extensions"
-    ],
+    "name": "sepiphy/laraveltools",
+    "description": "Provide helpful features for Laravel projects.",
+    "keywords": ["sepiphy", "laravel", "laraveltools"],
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/sepiphy/laravel-extensions",
+    "homepage": "https://github.com/sepiphy/laraveltools",
     "support": {
-        "issues": "https://github.com/sepiphy/laravel-extensions/issues",
-        "source": "https://github.com/sepiphy/laravel-extensions"
+        "issues": "https://github.com/sepiphy/laraveltools/issues",
+        "source": "https://github.com/sepiphy/laraveltools"
     },
     "authors": [
         {
