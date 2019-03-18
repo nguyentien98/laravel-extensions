@@ -12,7 +12,7 @@ Provide helpful features for Laravel projects.
 
 ## Contributing
 
-- Thank you for considering contributing to `sepiphy/laravel-extensions` package!
+- Thank you for considering contributing to `sepiphy/laraveltools` package!
 
 - Feel free to submit an issue or a pull request for your expectation!
 
@@ -20,4 +20,4 @@ Provide helpful features for Laravel projects.
 
 ## License
 
-The `sepiphy/laravel-extensions` package is open-sourced software licensed under the [MIT license](LICENSE.md).
+The `sepiphy/laraveltools` package is open-sourced software licensed under the [MIT license](LICENSE.md).
